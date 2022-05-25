@@ -1,0 +1,545 @@
+<!--FULL STACK DEVELOPER - ADELE MACHEDA-->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio settimana 06 - Adele Macheda</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300;1,400;1,500&family=Raleway:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!--CSS custom-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="bi bi-arrow-up-short"></i></button>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ps-2 shadow mb-5">
+        <a class="navbar-brand" href="#">EPICODE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Link 5</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item btn btn-outline-secondary">Get started</li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <header class="d-flex mt-5 pt-5 mx-0 justify-content-center shadow mb-5" id="header">
+        <div class="row justify-content-center m-0 ps-4">
+            <div class="col-md-5 col-lg-5 p-5 justify-content-center">
+                <h1>Elegant and creative solutions</h1>
+                <span class="subtitle">We are team of talented designers making websites with Bootstrap</span>
+                <p><a href="#" class="">Get Started</a> <i class="bi bi-play-circle"></i> Watch video</p>
+            </div>
+            <div class="header-logo col-md-5 col-lg-5 m-0 p-0">
+                <img class="header-img w-75" alt="about" src="assets/img/hero-img.png">
+            </div>
+        </div>
+    </header>
+
+    <section id="list-group" class="d-flex m-0">
+        <div class="row justify-content-center m-0">
+
+            <div class="lists col-md-4 col-xl-3 p-4 m-3">
+                <i class="bi bi-laptop"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius dictum leo. Aliquam id
+                    purus accumsan, auctor nisl ut, volutpat nisl.</p>
+            </div>
+            <div class="lists col-md-4 col-xl-3 p-4 m-3">
+                <i class="bi bi-list-check"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius dictum leo. Aliquam id
+                    purus accumsan, auctor nisl ut, volutpat nisl.</p>
+            </div>
+            <div class="lists col-md-4 col-xl-3 p-4 m-3">
+                <i class="bi bi-clipboard-data"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius dictum leo. Aliquam id
+                    purus accumsan, auctor nisl ut, volutpat nisl.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="d-flex m-0" id="about">
+        <div class="row justify-content-center m-0">
+
+            <div class="col-md-5">
+                <img class="img-fluid" alt="about" src="assets/img/about.png">
+            </div>
+            <div class="col-md-5 p-5">
+                <h3>Aenean lacinia velit eu gravida aliquam. Ut eu venenatis elit.</h3>
+                <p><em>Donec ut bibendum nisi, in maximus lorem. Fusce elementum lacinia tortor, eu fringilla neque
+                        vehicula sed.</em></p>
+                <p>
+                <ul>
+                    <li><i class="bi bi-check-circle"></i> Duis dictum consequat nisl.</li>
+                    <li><i class="bi bi-check-circle"></i> Praesent tempus nulla non risus imperdiet rutrum et vitae
+                        sem.</li>
+                    <li><i class="bi bi-check-circle"></i> Nunc posuere urna vitae maximus molestie. Praesent libero
+                        dolor, consequat ac porta ut,
+                        hendrerit vitae nisl.</li>
+                </ul>
+
+                <p>Cras vehicula tortor iaculis magna tempus aliquam. Ut imperdiet dapibus ipsum, eleifend aliquam
+                    augue hendrerit et.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="numbers" class="container mb-5">
+
+
+        <div class="row text-center">
+
+            <div class="col-sm-2 col-md-3">
+                <span class="dataNum">232</span><br>
+                <span class="small">Clients</span>
+            </div>
+
+            <div class="col-md-3">
+                <span class="dataNum">521</span><br>
+                <span class="small">Projects</span>
+            </div>
+
+            <div class="col-md-3">
+                <span class="dataNum">1.463</span><br>
+                <span class="small">Hours of Support</span>
+            </div>
+
+            <div class="col-md-3">
+                <span class="dataNum">15</span><br>
+                <span class="small">Hard Workers</span>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="section2 pb-5 m-0" id="services">
+        <div class="justify-content-center">
+            <div class="intro">
+                <h2 class="title-shadow">Services</h2>
+                <h2>Services</h2>
+
+                Ut imperdiet dapibus ipsum, eleifend aliquam augue hendrerit et.
+            </div>
+            <div class="d-flex row justify-content-center m-0">
+
+
+                <div class="lists2 col-md-4 col-xl-3 p-5 m-3 text-center">
+                    <i class="bi bi-dribbble"></i>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius dictum leo. Aliquam id
+                        purus accumsan, auctor nisl ut, volutpat nisl.</p>
+                </div>
+                <div class="lists2 col-md-4 col-xl-3 p-5 m-3 text-center">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <h3>Sed ut perspiciatis</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius dictum leo. Aliquam id
+                        purus accumsan, auctor nisl ut, volutpat nisl.</p>
+                </div>
+                <div class="lists2 col-md-4 col-xl-3 p-5 m-3 text-center">
+                    <i class="bi bi-rainbow"></i>
+                    <h3>Magni Dolores</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius dictum leo. Aliquam id
+                        purus accumsan, auctor nisl ut, volutpat nisl.</p>
+                </div>
+                <div class="lists2 col-md-4 col-xl-3 p-5 m-3 text-center">
+                    <i class="bi bi-shield-shaded"></i>
+                    <h3>Nemo Enim</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius dictum leo. Aliquam id
+                        purus accumsan, auctor nisl ut, volutpat nisl.</p>
+                </div>
+                <div class="lists2 col-md-4 col-xl-3 p-5 m-3 text-center">
+                    <i class="bi bi-play-btn"></i>
+                    <h3>Dele cardo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius dictum leo. Aliquam id
+                        purus accumsan, auctor nisl ut, volutpat nisl.</p>
+                </div>
+                <div class="lists2 col-md-4 col-xl-3 p-5 m-3 text-center">
+                    <i class="bi bi-building"></i>
+                    <h3>Divera don</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius dictum leo. Aliquam id
+                        purus accumsan, auctor nisl ut, volutpat nisl.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section1 m-0 pb-5" id="portfolio">
+        <div class="intro">
+            <h2 class="title-shadow">Portfolio</h2>
+            <h2>Portfolio</h2>
+            <p>Ut imperdiet dapibus ipsum, eleifend aliquam augue hendrerit et.</p>
+            <ul class="d-flex row justify-content-center m-0">
+                <li class="mx-3"><a href="#">ALL</a></li>
+                <li class="mx-3"><a href="#">APP</a></li>
+                <li class="mx-3"><a href="#">CARD</a></li>
+                <li class="mx-3"><a href="#">WEB</a></li>
+            </ul>
+
+        </div>
+    </section>
+    <section class="section2 mx-0" id="testimonials">
+        <div class="intro">
+            <h2 class="title-shadow">Testimonials</h2>
+            <h2>Testimonials</h2>
+            Ut imperdiet dapibus ipsum, eleifend aliquam augue hendrerit et.
+        </div>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!--Inizio Cards carosello-->
+                    <div class="d-flex m-0">
+                        <div class="row m-0 justify-content-center">
+                            <div class="testimonials-card m-5 col-md-2 col-lg-3">
+                                <quote><i class="bi bi-quote"></i><br>
+                                    Nunc rutrum libero nec ligula euismod sagittis. Aliquam erat volutpat. Sed
+                                    condimentum justo vitae
+                                    eros porttitor pellentesque. Ut condimentum volutpat sapien et mollis. Nulla eget
+                                    orci ex.
+                                </quote>
+                                <div class="profile-carousel">
+                                    <img class="img-carousel" alt="photo" src="assets/img/testimonials-1.jpg">
+                                    <span class="text-carousel"><strong>John Doe</strong><br><em>Freelancer</em>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="testimonials-card m-5 col-md-2 col-lg-3">
+                                <quote>
+                                    <i class="bi bi-quote"></i><br>
+                                    Etiam congue augue a arcu imperdiet elementum at ut felis. Cras at facilisis eros.
+                                    Sed pretium quis ante ut hendrerit. Fusce et consectetur lorem.
+                                    Aenean eu tempor justo, rhoncus egestas magna.
+                                </quote>
+                                <div class="profile-carousel">
+                                    <img class="img-carousel" alt="photo" src="assets/img/testimonials-2.jpg">
+                                    <span class="text-carousel"><strong>Jena Karlis</strong><br><em>Store Owner</em>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="testimonials-card m-5 col-md-2 col-lg-3">
+                                <quote><i class="bi bi-quote"></i><br>
+                                    Aliquam posuere ligula ut nulla iaculis imperdiet. Nam at lorem condimentum,
+                                    vestibulum enim sit amet, condimentum erat. Morbi vitae accumsan nisl, nec varius
+                                    sapien.
+                                </quote>
+                                <div class="profile-carousel">
+                                    <img class="img-carousel" alt="photo" src="assets/img/testimonials-4.jpg">
+                                    <span class="text-carousel"><strong>Matt Brandon</strong><br><em>Blogger</em>
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="spacer col-md-12"></div>
+                        </div>
+                    </div>
+                    <!--Fine Cards carosello-->
+
+                </div>
+                <div class="carousel-item">
+                    <!--Inizio Cards carosello-->
+                    <div class="d-flex m-0">
+                        <div class="row m-0 justify-content-center">
+                            <div class="testimonials-card m-5 col-md-2 col-lg-3">
+                                <quote><i class="bi bi-quote"></i><br>
+                                    Nunc rutrum libero nec ligula euismod sagittis. Aliquam erat volutpat. Sed
+                                    condimentum justo vitae
+                                    eros porttitor pellentesque. Ut condimentum volutpat sapien et mollis. Nulla eget
+                                    orci ex.
+                                </quote>
+                                <div class="profile-carousel">
+                                    <img class="img-carousel" alt="photo" src="assets/img/testimonials-3.jpg">
+                                    <span class="text-carousel"><strong>John Doe</strong><br><em>Designer</em>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="testimonials-card m-5 col-md-2 col-lg-3">
+                                <quote>
+                                    <i class="bi bi-quote"></i><br>
+                                    Sed ante diam, mattis ac pulvinar rhoncus, bibendum in metus. Ut molestie ultrices
+                                    viverra. Quisque tincidunt, quam et faucibus suscipit, augue nisl molestie nisi.
+                                </quote>
+                                <div class="profile-carousel">
+                                    <img class="img-carousel" alt="photo" src="assets/img/testimonials-5.jpg">
+                                    <span class="text-carousel"><strong>John Doe</strong><br><em>Speaker</em>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="testimonials-card m-5 col-md-2 col-lg-3" style="display:none">
+                                <quote><i class="bi bi-quote"></i><br>
+                                    Nunc rutrum libero nec ligula euismod sagittis. Aliquam erat volutpat. Sed
+                                    condimentum justo vitae
+                                    eros porttitor pellentesque. Ut condimentum volutpat sapien et mollis. Nulla eget
+                                    orci ex.
+                                </quote>
+                                <div class="profile-carousel">
+                                    <img class="img-carousel" alt="photo" src="#">
+                                    <span class="text-carousel"><strong>Nome</strong><br><em>Titolo</em>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="spacer col-md-12"></div>
+                        </div>
+                    </div>
+                    <!--Fine Cards carosello-->
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+
+
+    </section>
+    <section class="section3 m-0" id="call">
+        <h2>Call To Action</h2>
+        <p>Ut imperdiet dapibus ipsum, eleifend aliquam augue hendrerit et. Vestibulum varius dictum leo. Aliquam id
+            purus accumsan, auctor nisl ut, volutpat nisl.
+            Aenean lacinia velit eu gravida aliquam. Ut eu venenatis elit. Donec ut bibendum nisi, in maximus lorem.
+            <br><br><br>
+            <a href="#">CALL TO ACTION</a>
+        </p>
+    </section>
+    <section class="section2 mx-0 pb-5" id="team">
+        <div class="intro">
+            <h2 class="title-shadow">Team</h2>
+            <h2>Team</h2>
+            Ut imperdiet dapibus ipsum, eleifend aliquam augue hendrerit et.
+        </div>
+        <div class="row justify-content-center m-0">
+            <div class="lists2 col-md-4 col-xl-3 p-4 m-3 justify-content-center">
+                <img src="assets/img/team-1.jpg" class="img-fluid" alt="Team member 01">
+                <p>
+                    <span class="team-name">Walter White</span>
+                    <span class="team-title">Chief Executive Office</span>
+                    <span class="team-text">
+                        Praesent tempus nulla non risus imperdiet rutrum et vitae sem. Morbi sagittis felis augue, sit
+                        amet elementum metus mollis suscipit.
+                    </span>
+                <div class="d-flex row justify-content-center m-0">
+                    <span class="team-social"><i class="bi bi-twitter"></i> <i class="bi bi-facebook"></i> <i
+                            class="bi bi-instagram"></i> <i class="bi bi-linkedin"></i></span>
+                </div>
+                
+            </div>
+            <div class="lists2 col-md-4 col-xl-3 p-4 m-3 justify-content-center">
+                <img src="assets/img/team-2.jpg" class="img-fluid" alt="Team member 03">
+                
+                    <span class="team-name">Sarah Jhinson</span>
+                    <span class="team-title">Product Manager</span>
+                    <span class="team-text">
+                        Mauris lorem neque, accumsan rutrum nisl ut, scelerisque tincidunt tortor. Nunc hendrerit neque
+                        dolor, eu tempus mi ornare eget.
+                    </span>
+                <div class="d-flex row justify-content-center m-0">
+                    <span class="team-social"><i class="bi bi-twitter"></i> <i class="bi bi-facebook"></i> <i
+                            class="bi bi-instagram"></i> <i class="bi bi-linkedin"></i></span>
+                </div>
+                
+            </div>
+            <div class="lists2 col-md-4 col-xl-3 p-4 m-3 justify-content-center">
+                <img src="assets/img/team-3.jpg" class="img-fluid" alt="Team member 02">
+                <p>
+                    <span class="team-name">William Anderson</span>
+                    <span class="team-title">CTO</span>
+                    <span class="team-text">
+                        Maecenas ac velit felis. Pellentesque lobortis arcu eleifend justo egestas, vel commodo ligula
+                        maximus. Etiam placerat, ipsum sit amet mollis egestas.
+                    </span>
+                </p>
+                <div class="d-flex row justify-content-center m-0">
+                    <span class="team-social"><i class="bi bi-twitter"></i> <i class="bi bi-facebook"></i> <i
+                            class="bi bi-instagram"></i> <i class="bi bi-linkedin"></i>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+    <section class="section1 m-0" id="contact">
+        <div class="intro">
+            <h2 class="title-shadow">Contact</h2>
+            <h2>Contact</h2>
+            Ut imperdiet dapibus ipsum, eleifend aliquam augue hendrerit et.
+        </div>
+
+        <div class="">
+            <!-- HO DOVUTO RIMUOVERE D-FLEX, ALTRIMENTI NON FUNZIONA-->
+            <div class="row justify-content-center m-0">
+                <div class="contact col-md-4 col-xl-4 p-4 m-3">
+                    <ul>
+                        <li>
+                            <i class="bi bi-geo-alt"></i>&nbsp;<span class="contact-list">Location:</span><br>
+                            <em>Gae Aulenti, Milan, Italy</em><br><br>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>&nbsp;<span class="contact-list">Email:</span><br>
+                            <em><a href="mailto:">info@email.com</a></em><br><br>
+                        </li>
+                        <li>
+                            <i class="bi bi-phone"></i>&nbsp;<span class="contact-list">Call:</span><br>
+                            <em><a href="tel:">+39 0912 569 698</a></em><br><br>
+                        </li>
+                    </ul>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.308900479851!2d9.187404651339294!3d45.48372397899848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c133391261d1%3A0xb55f65872cb8ba7!2sPiazza%20Gae%20Aulenti%2C%2020124%20Milano%20MI!5e0!3m2!1sit!2sit!4v1646082492131!5m2!1sit!2sit"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                </div>
+                <div class="contact col-md-5 col-xl-5 p-4 m-3">
+
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label for="text-nome">Your Name</label>
+                                <input type="text" id="text-nome" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label for="text-email">Your Email</label>
+                                <input id="text-email" type="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="text-subject">Subject</label>
+                            <input id="text-subject" type="text" class="form-control">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="text-message">Message</label>
+                            <textarea class="form-control" id="text-message" rows="8"></textarea>
+                            <div class="d-flex row justify-content-center m-0">
+                                <button type="submit" class="button">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="section2 m-0">
+        <div class="intro">
+            <h2 class="title-shadow">Epicode</h2>
+            <h2>Epicode</h2>
+            Ut imperdiet dapibus ipsum, eleifend aliquam augue hendrerit et.
+        </div>
+
+        <div class="container input-group mb-3">
+            <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email"
+                aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="button2 btn btn-outline" type="button">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="d-flex row justify-content-center m-0">
+            <div class="footer-social"><a href="#"><i class="bi bi-twitter"></i></a></div>
+            <div class="footer-social"><a href="#"><i class="bi bi-facebook"></i></a></div>
+            <div class="footer-social"><a href="#"><i class="bi bi-instagram"></i></a></div>
+            <div class="footer-social"><a href="#"><i class="bi bi-skype"></i></a></div>
+            <div class="footer-social"><a href="#"><i class="bi bi-linkedin"></i></a></div>
+        </div>
+        <hr class="hr">
+        <div class="container">
+            <div class="row justify-content-between pb-4">
+                <div>&copy;Copyright Epicode. All rights reserved.</div>
+                <div>Designed by <a href="#">BootstrapMade</a></div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- TOP BUTTON-->
+    <script src="assets/js/top.js"></script>
+</body>
+
+</html>

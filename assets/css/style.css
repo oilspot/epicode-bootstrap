@@ -1,0 +1,399 @@
+/*FULL STACK DEVELOPER - ADELE MACHEDA */
+
+body {
+    background-color: white;
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    color: #3f444f;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+
+h2 {
+    font-size: 2.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.4em;
+    
+}
+
+.title-shadow{
+    position: relative;
+    font-size: 3.5em;
+    font-weight: bold;
+    top: 50px;
+    color: rgba(0, 0, 0, 0.048);
+}
+
+@media screen and (max-width: 425px) {
+    .title-shadow {
+        display: none;
+    }
+    
+}
+
+#about h3 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#call h2 {
+    color: white;
+}
+
+.section2 h3 {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    display: inline-block;
+    color: gray;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+a, a:visited {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover, .nav-link a:hover{
+    font-weight: bold;
+    color: #53d876;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #53d876 !important; /* senza important non funziona*/
+}
+
+.section1 {
+    background-color: white;
+    padding-top:1em;
+}
+
+.section2 { background-color: #ebebf0;
+    padding-top:1em;
+
+}
+
+.section3 { background-color: #53d876;
+    color:white;
+    padding:4em;
+    text-align: center;
+}
+
+.section3 a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px 10px;
+    border: 3px solid;
+    border-radius: 8px;
+}
+
+.section3 a:hover {
+    color: black;
+
+}
+
+.contact {
+    background-color: #ebebf0;
+    border-top: 3pt solid #53d876;
+    border-bottom: 3pt solid #53d876;
+}
+
+.lists {
+    background-color: #ebebf0;
+    
+    /*margin-left: 2em;
+    margin-right: 2em;*/
+}
+
+.lists2 {
+    background-color: white;
+    padding: 2em, 0em, 2em;
+}
+
+#testimonials {
+    padding-bottom: 2em;
+}
+
+.testimonials-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px 30px 1px 30px;
+    font-style: italic;
+    font-weight: 500;
+    position: relative;
+}
+
+.testimonials-card .bi {
+    color: gray;
+    font-size: 2em;
+}
+
+.profile-carousel {
+    position: relative;
+    top: 0pt;
+}
+
+.profile-carousel em {
+    color: gray;
+}
+
+.img-carousel {
+    border-radius: 100%;
+    width: 120px;
+    height: auto;
+    border: 5px solid white;
+    position: relative;
+    top: 50px;
+}
+
+.text-carousel {
+    display: inline-block;
+    position: relative;
+    top: 80pt;
+    margin-left: 10pt;
+}
+
+.spacer {
+    margin-bottom: 85px;
+}
+
+
+
+.intro{
+    text-align: center;
+}
+
+.button {
+    background-color: #53d876;
+    color: white;
+    padding: 10px 30px 10px;
+    border: 0;
+    border-radius: 5px;
+    margin:15px auto 3em;
+    
+}
+
+.button2{
+    background-color: #53d876;
+    color: white !important;
+}
+
+.button2:hover {
+    background-color: #20ce4e;
+}
+
+header a {
+    background-color: #53d876;
+    color:white !important;
+    text-decoration: none;
+    padding: 10px 30px 10px;
+    border: 0;
+    border-radius: 5px;
+    margin:15px 40px 3em auto;
+}
+
+header a:hover, .button:hover {
+    background-color: #20ce4e;
+}
+
+.bi {
+    font-size: 1.4em;
+    color: #53d876;
+
+}
+
+.lists .bi {
+    font-size: 3em;
+}
+
+.lists2 .bi {
+    font-size: 1.9em;
+}
+
+.contact-bi {
+    font-size: 1em;
+    background: white;
+    
+}
+.contact-list {
+    font-size: 1.4em;
+}
+
+.contact a, .contact a:hover {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/*ormai irrilevante
+nav li:before{
+    display:none;
+}*/
+
+/*li:before { DA SISTEMARE
+    font-family: 'Glyphicons Halflings';
+    content: "\F26B";
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #53d876;
+    display: none;
+
+}*/
+
+ul {
+    list-style-type: none;
+  }
+
+.dataNum {
+    font-size: 3em;
+    font-weight: bold;
+    color:#53d876;
+
+}
+
+.small {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.team-name {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.team-title {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;;
+    font-style: italic;
+    margin-bottom: 3px;
+}
+
+.team-text {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    color: gray;
+    font-style: italic;
+    margin-bottom: 8px;
+
+}
+
+.team-social {
+    display: block;
+    align-content: center; /* NON FUNZIONA*/
+    align-self: center; /* NON FUNZIONA*/
+}
+
+.team-social .bi {
+    text-align: center; /*NON FUNZIONA*/
+    color: gray;
+    font-size: 1em;
+}
+
+.footer-social {
+    display: inline-block;
+    background-color: lightgray;
+    color: white !important;
+    padding: 5px 10px 5px;
+    margin: 5px;
+}
+
+.footer-social:hover {
+    background-color: #20ce4e;
+}
+
+.footer-social .bi {
+    color:rgb(63, 62, 62);
+    font-size: 1em;
+}
+
+.hr {
+width: 80%;
+margin-bottom: 3em;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #53d876;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px 10px;
+    border-radius: 4px;
+  }
+  
+  #topBtn:hover {
+    background-color: #20ce4e;
+    color: white;
+  }
+
+  #topBtn .bi {
+      color: white;
+      
+  }
+
+/*.header-logo {
+    background-image: url('../img/hero-img.png');
+    position: relative;
+    animation: MoveUpDown 1.5s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    60% {
+      bottom: 100px;
+    }
+  }*/
+
+.header-img {
+    animation: MoveUpDown 1.5s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 30px;
+    }
+  }
